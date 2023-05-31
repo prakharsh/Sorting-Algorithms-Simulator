@@ -15,6 +15,7 @@
 .rng_input{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 button,input{
     margin:30px 30px 30px 0px
@@ -23,9 +24,16 @@ label{
    margin:27px 3px 30px 30px ;
    font-size:15px ;
 }
-span {
-    color: rgb(87, 87, 87);
-    position: absolute;
-    bottom:0px ;
-    left:5px ;
+footer{
+    color: rgb(87, 87, 87) ;
+    position:absolute ;
+    bottom:5px ;
+    left:10px ;
+  }
+@media only screen and (max-width: 570px) {
+    footer{
+        position:static ;
+        color: rgb(87, 87, 87) ;
+        margin:0px ;
+      }
   }

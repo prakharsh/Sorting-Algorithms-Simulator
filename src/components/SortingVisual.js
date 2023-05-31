@@ -138,7 +138,7 @@ function SortingVisual() {
 //     }
 //    }
   return (
-    <>
+    <div className={styles.main} style={{height:'100%'}}>
     <nav className="navbar navbar-dark bg-primary">
             <h1 style={{textAlign:'center'}}>Sorting Algorithms Simulator</h1>
     </nav>
@@ -161,7 +161,8 @@ function SortingVisual() {
     <button type="button" className="btn btn-primary"  onClick={DoQuickSort}>Quick Sort</button>
     </div>
     <div className={styles.rng_input}>
-    <label >Array Size</label> 
+    <div style={{display:'flex'}}>
+    <label >Array Size </label>
     <input
           id="changeSize"
           type="range"
@@ -170,8 +171,9 @@ function SortingVisual() {
           defaultValue="5"  
           style={{width:'200px'}}
            onChange={()=>{resetArray(document.getElementById("changeSize").value*10)}}
-          />
-          <label>Speed</label>
+          /></div>
+          <div style={{display:'flex'}}>
+          <label className={styles.label2}>Speed</label>
          <input
           id="changeSpeed"
           type="range"
@@ -180,12 +182,12 @@ function SortingVisual() {
           defaultValue="5" 
           style={{width:'200px'}}
            onChange={()=>{changeSpeed(200-(document.getElementById("changeSpeed").value*20))}}
-          />
+          /></div>
           </div>
           <footer>
             <span><h4>Copyright &copy;  - Prakhar Sharma</h4></span>
         </footer>
-    </>
+    </div>
   )
 }
 

@@ -1,4 +1,13 @@
-:root{
+.root{
   margin: 0;
   padding: 0;
+  height:100vh ;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height:100vh ;
+}
+html,#root, body, #app, #app>div {
+  height: 100%
 }
