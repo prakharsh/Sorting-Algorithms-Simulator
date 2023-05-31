@@ -20,5 +20,12 @@ button,input{
     margin:30px 30px 30px 0px
 }
 label{
-   margin:27px 3px 30px 30px
+   margin:27px 3px 30px 30px ;
+   font-size:15px ;
 }
+span {
+    color: rgb(87, 87, 87);
+    position: absolute;
+    bottom:0px ;
+    left:5px ;
+  }

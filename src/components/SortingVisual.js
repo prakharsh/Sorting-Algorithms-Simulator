@@ -182,6 +182,9 @@ function SortingVisual() {
            onChange={()=>{changeSpeed(200-(document.getElementById("changeSpeed").value*20))}}
           />
           </div>
+          <footer>
+            <span><h4>Copyright &copy;  - Prakhar Sharma</h4></span>
+        </footer>
     </>
   )
 }
