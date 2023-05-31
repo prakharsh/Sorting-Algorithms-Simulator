@@ -15,7 +15,7 @@ let displayarr=[]
             {
                 let value = arr[start2];
                 let index = start2;
-                while (index != start)
+                while (index !== start)
                 {
                     arr[index] = arr[index - 1];
                     index--;
